@@ -1,0 +1,287 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Start Section */
+.header-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-end {
+    text-align: right;
+    color: #333;
+}
+
+.header-end .date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0c3d8a; /* Dark blue color for emphasis */
+}
+
+.header-end .location {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .header-start {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 60px; /* Smaller logo for mobile */
+    }
+
+    .header-end {
+        margin-top: 0.5rem;
+    }
+}
+
+.navbar {
+    background-color: #002366; /* Deep Blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: #002366;
+    width: 100%;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #003399; /* Lighter Blue */
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #002366;
+    list-style: none;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #003399;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: #002366;
+    }
+}
+main {
+    width: 100%;
+    min-height: 100vh; /* Ensures full viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 1rem; /* Adds spacing inside main */
+    box-sizing: border-box;
+}
+/* Conference Details */
+.conference-details {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.highlight {
+    color: #0b8043; /* Green highlight */
+    font-weight: bold;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.register-btn,
+.rump-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #9ec5a7; /* Light green */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register-btn:hover,
+.rump-btn:hover {
+    background-color: #81a98d;
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.card-title {
+    background-color: #e8d6b6; /* Light beige */
+    color: #333;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dates-list,
+.updates-list {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.dates-list li,
+.updates-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.date {
+    font-weight: bold;
+    color: #e8851b; /* Orange color for dates */
+}
+
+.highlight {
+    color: #0b8043; /* Green text */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    width: 100%; /* Ensure full-width */
+    position: fixed; /* Fix footer to the bottom */
+    bottom: 0; /* Stick to bottom */
+    left: 0; /* Align to left */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}

@@ -1,0 +1,111 @@
+
+.rump-session-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    color: #00703c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2, .section h3 {
+    color: #e29a17;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #e29a17;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #cc870f;
+}
+
+/* Chairs Section */
+.chairs {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.chairs h2 {
+    color: #00703c;
+    margin-bottom: 10px;
+}
+
+.chair-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.chair-names p {
+    font-size: 1rem;
+}
+
+.email {
+    margin-top: 15px;
+}
+
+.email a {
+    color: #00703c;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+/* Warning Section */
+.warning {
+    background-color: #fde8e8;
+    padding: 15px;
+    border: 1px solid #f5c6c6;
+    border-radius: 5px;
+}
+
+.warning p {
+    font-weight: bold;
+    color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chair-names {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

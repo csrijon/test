@@ -1,0 +1,105 @@
+
+.container {
+    background-color: #fdfcf8;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.sponsors h2 {
+    font-size: 2rem;
+    color: #2c7e2f; /* Green Color */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p.description {
+    text-align: center;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    max-width: 800px;
+}
+
+p.description .link {
+    color: #00897b;
+    text-decoration: none;
+}
+
+p.description .link:hover {
+    text-decoration: underline;
+}
+
+/* Sponsor Levels */
+.sponsor-level {
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    max-width: 800px;
+}
+
+.sponsor-level h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sponsor-level img {
+    max-width: 250px;
+    height: auto;
+}
+
+.sponsor-logo {
+    margin-bottom: 1rem;
+}
+
+.sponsor-logo .slogan {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Levels Styling */
+.gold {
+    color: #d4af37; /* Gold */
+}
+
+.silver {
+    color: #a8a8a8; /* Silver */
+}
+
+.bronze {
+    color: #cd7f32; /* Bronze */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p.description {
+        font-size: 0.9rem;
+    }
+
+    .sponsor-level h3 {
+        font-size: 1.25rem;
+    }
+
+    .sponsor-level img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsor-level h3 {
+        font-size: 1rem;
+    }
+
+    .sponsor-level img {
+        max-width: 150px;
+    }
+
+    .sponsor-logo .slogan {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,118 @@
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Date Header */
+.date-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D27D26;
+    margin-bottom: 20px;
+}
+
+/* Schedule Columns */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.time-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.time {
+    font-size: 0.9rem;
+    color: #4D4D4D;
+    text-align: center;
+    flex: 1;
+}
+
+/* Event Blocks */
+.event-block {
+    flex: 2;
+    background-color: #FEF6EA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.event-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Button Style */
+.zoom-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.zoom-button:hover {
+    background-color: #45a049;
+}
+
+/* Paper Section */
+.paper-section {
+    margin-top: 10px;
+}
+
+.paper-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.speaker {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.abstract-link {
+    font-size: 0.8rem;
+    text-align: center;
+    display: block;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.abstract-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .time-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time {
+        margin-bottom: 10px;
+    }
+}

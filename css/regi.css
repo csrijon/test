@@ -1,0 +1,133 @@
+/* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+} */
+
+.registration-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #00732f;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.registration-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.registration-table th,
+.registration-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.registration-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
+
+.notice {
+    background-color: #e8f5e9;
+    color: #00732f;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.notice a {
+    color: #00732f;
+    font-weight: bold;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-box h3 {
+    color: #b37f00;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button button {
+    background-color: #d68910;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #a36700;
+}
+
+.student-support h3 {
+    color: #b37f00;
+    margin-bottom: 0.5rem;
+}
+
+.student-support a {
+    color: #00732f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.student-support a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-table th,
+    .registration-table td {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .cta-button button {
+        width: 100%;
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .registration-section {
+        padding: 1rem;
+    }
+}
